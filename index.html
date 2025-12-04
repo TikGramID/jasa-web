@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Website Sarid Syahrinal | Merah Putih</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- RESET & DASAR --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background-color: #ffffff; }
+        a { text-decoration: none; }
+        ul { list-style: none; }
+
+        /* --- TEMA MERAH PUTIH --- */
+        :root {
+            --primary: #dc2626; /* MERAH CABE */
+            --secondary: #991b1b; /* MERAH GELAP */
+            --white: #ffffff;
+            --light-gray: #f9f9f9;
+        }
+
+        /* --- HEADER --- */
+        header { background: var(--white); box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 3px solid var(--primary); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; max-width: 1200px; margin: 0 auto; }
+        
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+        
+        .nav-links a { margin-left: 20px; color: #333; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        .btn-cta { background: var(--primary); color: var(--white) !important; padding: 10px 25px; border-radius: 5px; font-weight: bold; }
+        .btn-cta:hover { background: var(--secondary); box-shadow: 0 5px 15px rgba(220, 38, 38, 0.3); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(135deg, #ffffff 50%, #fff1f1 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            padding-top: 80px;
+        }
+        .hero-content h1 { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1.2; color: #333; }
+        .hero-content h1 span { color: var(--primary); } 
+        .hero-content p { font-size: 1.2rem; margin-bottom: 2rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto; }
+        
+        .btn-hero { 
+            background: var(--primary); color: var(--white); 
+            padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; 
+            font-weight: bold; transition: 0.3s; display: inline-block; 
+            border: 2px solid var(--primary);
+        }
+        .btn-hero:hover { 
+            background: var(--white); color: var(--primary); 
+            transform: translateY(-5px); 
+        }
+
+        /* --- DAFTAR BIAYA MASUK (PRICING) --- */
+        .pricing { padding: 100px 20px; background: var(--primary); color: white; text-align: center; }
+        .pricing h2 { margin-bottom: 50px; font-size: 2.5rem; }
+        .pricing-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto; }
+        
+        .pricing-card { 
+            background: var(--white); 
+            color: #333;
+            padding: 40px; 
+            border-radius: 15px; 
+            width: 300px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            position: relative; 
+            transition: 0.3s;
+        }
+        .pricing-card:hover { transform: scale(1.05); }
+        
+        .label-biaya {
+            background: #ffe5e5; color: var(--primary);
+            padding: 5px 15px; border-radius: 20px;
+            font-size: 12px; font-weight: bold; text-transform: uppercase;
+            display
